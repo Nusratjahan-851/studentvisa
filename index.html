@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysia Success Consultancy | ২০২৬ স্টুডেন্ট ও জব ভিসা</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="cdn.jsdelivr.net" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="cdnjs.cloudflare.com">
+    
+    <style>
+        :root {
+            --primary-blue: #003366;
+            --gold: #f1c40f;
+            --light-bg: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; overflow-x: hidden; }
+        
+        /* Navbar Style */
+        .navbar { background: var(--primary-blue); box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-link { color: white !important; font-weight: 500; margin-left: 20px; transition: 0.3s; }
+        .nav-link:hover { color: var(--gold) !important; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,51,102,0.85), rgba(0,51,102,0.85)), 
+                        url('images.unsplash.com');
+            background-size: cover; background-position: center;
+            color: white; padding: 120px 0; text-align: center;
+        }
+        .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 20px; }
+        .btn-gold { background: var(--gold); border: none; padding: 12px 30px; font-weight: bold; border-radius: 5px; }
+
+        /* Service Cards */
+        .card-service {
+            border: none; transition: 0.4s; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .card-service:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .icon-box { color: var(--primary-blue); margin-bottom: 20px; }
+
+        /* Checklist Section */
+        .checklist-card { border-left: 5px solid var(--primary-blue); }
+
+        /* Contact & Footer */
+        .contact-section { padding: 80px 0; background: #fff; }
+        .footer { background: #111; color: #ccc; padding: 50px 0; font-size: 14px; }
+        
+        /* Floating WhatsApp */
+        .whatsapp-btn {
+            position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white;
+            padding: 15px 20px; border-radius: 50px; font-weight: bold; text-decoration: none;
+            z-index: 1000; box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MY-CONSULTANCY <span class="text-warning">2026</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="#">হোম</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">সেবা</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#checklist">চেকলিস্ট</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">যোগাযোগ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">মালয়েশিয়ায় উচ্চশিক্ষা ও সুন্দর ক্যারিয়ার</h1>
+            <p class="lead mb-4">স্বল্প খরচে বিশ্বমানের ডিগ্রি এবং গ্র্যাজুয়েট পাসের মাধ্যমে চাকরির সুবিধা</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#contact" class="btn btn-gold btn-lg">ফ্রি পরামর্শ নিন</a>
+                <a href="#checklist" class="btn btn-outline-light btn-lg">যোগ্যতা যাচাই করুন</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5" style="color: var(--primary-blue);">আমাদের বিশেষত্ব</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-service p-4 h-100">
+                        <div class="icon-box"><i class="fas fa-university fa-3x"></i></div>
+                        <h4>টপ ইউনিভার্সিটি</h4>
+                        <p>মালয়েশিয়ার সেরা পাবলিক ও প্রাইভেট ইউনিভার্সিটিতে ১০০% গ্যারান্টিড অ্যাডমিশন।</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-service p-4 h-100">
+                        <div class="icon-box"><i class="fas fa-passport fa-3x"></i></div>
+                        <h4>ভিসা প্রসেসিং</h4>
+                        <p>EMGS আবেদন থেকে শুরু করে স্টিকার ভিসা পর্যন্ত অভিজ্ঞ টিমের মাধ্যমে কাজ করা হয়।</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-service p-4 h-100">
+                        <div class="icon-box"><i class="fas fa-briefcase fa-3x"></i></div>
+                        <h4>চাকরির সুযোগ</h4>
+                        <p>পড়াশোনা শেষে ১২ মাসের গ্র্যাজুয়েট পাস এবং জবের ক্ষেত্রে পূর্ণ সহায়তা।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa Checklist -->
+    <section id="checklist" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">প্রয়োজনীয় ডকুমেন্টস (চেকলিস্ট)</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-white p-4 rounded shadow-sm checklist-card">
+                        <h5 class="text-primary fw-bold"><i class="fas fa-file-alt me-2"></i> একাডেমিক</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> SSC ও HSC সার্টিফিকেট</li>
+                            <li><i class="fas fa-check text-success me-2"></i> মার্কশিট ও ট্রান্সক্রিপ্ট</li>
+                            <li><i class="fas fa-check text-success me-2"></i> প্রশংসাপত্র</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-white p-4 rounded shadow-sm checklist-card">
+                        <h5 class="text-primary fw-bold"><i class="fas fa-user me-2"></i> ব্যক্তিগত</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> পাসপোর্ট (১৮ মাস মেয়াদ)</li>
+                            <li><i class="fas fa-check text-success me-2"></i> সাদা ব্যাকগ্রাউন্ডের ছবি</li>
+                            <li><i class="fas fa-check text-success me-2"></i> জন্ম নিবন্ধন/NID</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-white p-4 rounded shadow-sm checklist-card">
+                        <h5 class="text-primary fw-bold"><i class="fas fa-hand-holding-usd me-2"></i> আর্থিক</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> ব্যাংক স্টেটমেন্ট</li>
+                            <li><i class="fas fa-check text-success me-2"></i> ব্যাংক সলভেন্সি কপি</li>
+                            <li><i class="fas fa-check text-success me-2"></i> হেলথ ডিক্লারেশন</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row shadow-lg rounded overflow-hidden">
+                <div class="col-md-5 bg-dark p-5 text-white">
+                    <h3 class="mb-4">যোগাযোগ করুন</h3>
+                    <p><i class="fas fa-map-marker-alt me-3 text-warning"></i> ঢাকা অফিস: বনানী, ঢাকা-১২১৩</p>
+                    <p><i class="fas fa-phone me-3 text-warning"></i> +৮৮০ ১৮XXXXXXXX</p>
+                    <p><i class="fas fa-envelope me-3 text-warning"></i> info@yourdomain.com</p>
+                    <div class="mt-5">
+                        <h5 class="mb-3">আমাদের সোশ্যাল মিডিয়া</h5>
+                        <a href="#" class="text-white me-3 fs-4"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3 fs-4"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 bg-white p-5">
+                    <h3 class="text-center mb-4">আবেদন ফর্ম</h3>
+                    <form>
+                        <div class="mb-3"><input type="text" class="form-control" placeholder="আপনার নাম" required></div>
+                        <div class="row mb-3">
+                            <div class="col"><input type="email" class="form-control" placeholder="ইমেইল" required></div>
+                            <div class="col"><input type="tel" class="form-control" placeholder="ফোন নম্বর" required></div>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option>ভিসার ধরণ পছন্দ করুন</option>
+                                <option>ব্যাচেলর (স্টুডেন্ট)</option>
+                                <option>মাস্টার্স (স্টুডেন্ট)</option>
+                                <option>প্রফেশনাল ভিসা</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary w-100 p-3 fw-bold">তথ্য পাঠান</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="wa.me" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp me-2"></i> চ্যাট করুন
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Malaysia Success Consultancy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="cdn.jsdelivr.net"></script>
+</body>
+</html>
